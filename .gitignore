@@ -1,0 +1,6 @@
+*.cif
+*.in
+*.out
+task1/output
+task1/pseudo
+task1/run
