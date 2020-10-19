@@ -27,4 +27,17 @@ $(sed -i $sedCommand config.in)
 sedCommand=$(grep -n "trho" config.in | grep -o "^[0-9]*")"s/200/"$mdf"/"
 $(sed -i $sedCommand config.in)
 
+echo ""
+echo "K mesh optimisation"
+echo "-------------------"
 ./auto_K_mesh.sh
+
+echo ""
+echo "Basis set size optimisation"
+echo "---------------------------"
+./auto_bss.sh $mwf $mdf
+
+echo ""
+echo "Factor optimisation"
+echo "-------------------"
+./auto_factor.sh

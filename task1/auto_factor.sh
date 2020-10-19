@@ -1,21 +1,28 @@
 #!/bin/bash
 
-
-ecutwfc=90
-prev_ecutrho=180
+ecutwfc=$(grep "twfc" config.in | grep -o "[0-9]*")
+prev_ecutrho=$(grep "trho" config.in | grep -o "[0-9]*")
 for (( i = 2; i < 11; ++i )); do
     # setup input file for pw.x
-    ecutrho=$( bc -l <<<"$ecutwfc*$i" )
-    sedEcutrho="25s/$prev_ecutrho/$ecutrho/g"
+    ecutrho=$( echo "$ecutwfc*$i" | bc )
+    sedEcutrho=$(grep -n "trho" config.in | grep -o "^[0-9]*")"s/$prev_ecutrho/$ecutrho/g"
     $(sed -i $sedEcutrho config.in)
     prev_ecutrho=$ecutrho
 
+    echo 'test'
     ./run
 
     # get all needed info from output file
     pressure=$(grep "P\=" config.out | grep -o "[^\ ]*$")
-    time=$(grep "PWSCF" config.out | grep -o "[^\ ]*s" | sed "3q;d")
+    time=$(grep "PWSCF" config.out | grep "CPU" | grep -o "[^\ ]*s" | sed "3q;d")
 
     # print findings
     echo -e "$ecutwfc\t$ecutrho\t$pressure\t$time"
 done
+
+echo "What factor do you want to use? "
+read f
+ecutrho=$( echo "$ecutwfc*$f" | bc )
+sedEcutrho=$(grep -n "trho" config.in | grep -o "^[0-9]*")"s/$prev_ecutrho/$ecutrho/g"
+$(sed -i $sedEcutwfc config.in)
+$(sed -i $sedEcutrho config.in)
