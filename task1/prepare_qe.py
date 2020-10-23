@@ -1,4 +1,6 @@
-# Created by Wouter Heyvaert <wouter.heyvaert@student.uantwerpen.be>
+# Created by Emile Segers <emile.segers@ugent.be>
+#
+# This is based on a script based on a scripted made by Wouter Heyvaert
 #
 # Use this file to prepare a project directory
 # for Quantum Espresso for a given cif file.
@@ -39,6 +41,9 @@ if not os.path.exists('output'):
 if not os.path.exists('pseudo'):
     os.makedirs('pseudo')
 
+if os.path.exists(f'{name}.in'):
+    os.remove(f'{name}.in')
+
 # Run cif2cell
 print('Running cif2cell...')
 os.system(f'cif2cell -f {cif_name} -o {name}.in -p quantum-espresso')
@@ -48,7 +53,13 @@ print('Adding defaults to input file...')
 with open(f'{name}.in', 'r') as f:
     contents = f.readlines()
 
-contents[7] = f"""
+## Look for line with SYSTEM
+## Insert control configs
+line=0
+while "SYSTEM" not in contents[line]:
+    line+=1
+
+contents.insert(line, f"""\
 &CONTROL
   calculation = 'scf'
   outdir = 'output'
@@ -58,8 +69,15 @@ contents[7] = f"""
   tprnfor = .true.
   tstress = .true.
 /
-"""
-contents[13] = """\
+""")
+
+## Look for end of system config
+## Add to system config and electron config
+line+=1
+while "/" not in contents[line]:
+    line+=1
+
+contents.insert(line, f"""\
   ecutwfc = 50
   ecutrho = 200
   input_dft = 'pbe'
@@ -67,18 +85,16 @@ contents[13] = """\
   smearing = 'mv'
   degauss = 0.005d0
 /
-
 &ELECTRONS
   conv_thr = 1d-08
   mixing_beta = 0.7d0
-/
+""")
 
-"""
-contents[-1] += """\
+contents.append("""\
 K_POINTS {automatic}
   1 1 1 0 0 0
 
-"""
+""")
 
 with open(f'{name}.in', 'w') as f:
     f.writelines(contents)

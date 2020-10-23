@@ -9,20 +9,18 @@ for (( i = 2; i < 11; ++i )); do
     $(sed -i $sedEcutrho config.in)
     prev_ecutrho=$ecutrho
 
-    echo 'test'
     ./run
 
     # get all needed info from output file
     pressure=$(grep "P\=" config.out | grep -o "[^\ ]*$")
-    time=$(grep "PWSCF" config.out | grep "CPU" | grep -o "[^\ ]*s" | sed "3q;d")
+    time=$(grep "PWSCF" config.out | grep "CPU" | grep -o "[^\ ]*\ \?[^\ ]*\ \?[^\ ]*s" | tail -n1)
 
     # print findings
-    echo -e "$ecutwfc\t$ecutrho\t$pressure\t$time"
+    echo -e "$i\t$ecutwfc\t$ecutrho\t$pressure\t$time"
 done
 
 echo "What factor do you want to use? "
 read f
 ecutrho=$( echo "$ecutwfc*$f" | bc )
 sedEcutrho=$(grep -n "trho" config.in | grep -o "^[0-9]*")"s/$prev_ecutrho/$ecutrho/g"
-$(sed -i $sedEcutwfc config.in)
 $(sed -i $sedEcutrho config.in)

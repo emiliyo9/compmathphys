@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "\nFinding solutions for different K meches\n\n"
-
 prev=1
 line=$(cat config.in | wc -l)
 line=$(echo "$line-1" | bc)
@@ -17,7 +15,7 @@ do
 
     # get all needed info from output file
     pressure=$(grep "P\=" config.out | grep -o '[^\ ]*$')
-    time=$(grep "PWSCF" config.out | grep "CPU" | grep -o "[^\ ]*s" | sed "3q;d")
+    time=$(grep "PWSCF" config.out | grep "CPU" | grep -o "[^\ ]*\ \?[^\ ]*\ \?[^\ ]*s" | tail -n1)
 
     # print findings
     echo -e "$k\t$pressure\t$time"
