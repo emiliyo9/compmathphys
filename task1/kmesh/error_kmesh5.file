@@ -1,36 +1,6 @@
-forrtl: severe (174): SIGSEGV, segmentation fault occurred
-Image              PC                Routine            Line        Source             
-pw.x               000000000385B201  Unknown               Unknown  Unknown
-pw.x               0000000003859957  Unknown               Unknown  Unknown
-pw.x               0000000003804B84  Unknown               Unknown  Unknown
-pw.x               0000000003804996  Unknown               Unknown  Unknown
-pw.x               00000000037975DF  Unknown               Unknown  Unknown
-pw.x               000000000379DA6D  Unknown               Unknown  Unknown
-libpthread.so.0    00002B6622B66630  Unknown               Unknown  Unknown
-pw.x               0000000000509745  Unknown               Unknown  Unknown
-pw.x               00000000006704AB  Unknown               Unknown  Unknown
-pw.x               000000000047E922  Unknown               Unknown  Unknown
-pw.x               000000000047C335  Unknown               Unknown  Unknown
-pw.x               0000000000406841  Unknown               Unknown  Unknown
-pw.x               00000000004066BF  Unknown               Unknown  Unknown
-pw.x               000000000040662E  Unknown               Unknown  Unknown
-libc.so.6          00002B6623EB7555  Unknown               Unknown  Unknown
-pw.x               0000000000406529  Unknown               Unknown  Unknown
-forrtl: severe (174): SIGSEGV, segmentation fault occurred
-Image              PC                Routine            Line        Source             
-pw.x               000000000385B201  Unknown               Unknown  Unknown
-pw.x               0000000003859957  Unknown               Unknown  Unknown
-pw.x               0000000003804B84  Unknown               Unknown  Unknown
-pw.x               0000000003804996  Unknown               Unknown  Unknown
-pw.x               00000000037975DF  Unknown               Unknown  Unknown
-pw.x               000000000379DA6D  Unknown               Unknown  Unknown
-libpthread.so.0    00002B2BA5F0D630  Unknown               Unknown  Unknown
-pw.x               0000000000509745  Unknown               Unknown  Unknown
-pw.x               00000000006704AB  Unknown               Unknown  Unknown
-pw.x               000000000047E922  Unknown               Unknown  Unknown
-pw.x               000000000047C335  Unknown               Unknown  Unknown
-pw.x               0000000000406841  Unknown               Unknown  Unknown
-pw.x               00000000004066BF  Unknown               Unknown  Unknown
-pw.x               000000000040662E  Unknown               Unknown  Unknown
-libc.so.6          00002B2BA725E555  Unknown               Unknown  Unknown
-pw.x               0000000000406529  Unknown               Unknown  Unknown
+2
+2
+2
+2
+2
+2

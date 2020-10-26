@@ -1,9 +1,9 @@
 #!/bin/sh
 #
 #
-#PBS -N jobFe4N_Kmesh
-#PBS -o outputFe4N_Kmesh.file
-#PBS -e errorFe4N_Kmesh.file
+#PBS -N kmesh13
+#PBS -o out_kmesh13.file
+#PBS -e error_kmesh13.file
 #PBS -l walltime=1:00:00
 #PBS -l nodes=1:ppn=6
 #PBS -m be -M emile.segers8@gmail.com
