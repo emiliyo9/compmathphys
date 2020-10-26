@@ -84,6 +84,9 @@ contents.insert(line, f"""\
   occupations = 'smearing'
   smearing = 'mv'
   degauss = 0.005d0
+  nspin = 2
+  starting_magnetization(1) = 0.5
+  starting_magnetization(2) = -0.01
 /
 &ELECTRONS
   conv_thr = 1d-08
