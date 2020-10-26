@@ -5,7 +5,7 @@
 #PBS -o outputFe4N_Kmesh.file
 #PBS -e errorFe4N_Kmesh.file
 #PBS -l walltime=1:00:00
-#PBS -l nodes=1:ppn=6
+#PBS -l nodes=1:ppn=1
 #PBS -m be -M emile.segers8@gmail.com
 #
 # change to directory you were working when submitting job
