@@ -3,7 +3,7 @@
 prev=1
 line=$(cat config.in | wc -l)
 line=$(echo "$line-1" | bc)
-for k in 1 3 5 7 9 11
+for k in 1 3 5 7 9 11 13
 do
     # setup input file for pw.x
     sedCommand=$line"s/$prev/$k/g"
@@ -21,7 +21,7 @@ do
     echo -e "$k\t$pressure\t$time"
 done
 
-echo "What K mech do you want to use? "
-read k
-sedCommand=$line"s/$prev/$k/g"
-$(sed -i $sedCommand config.in)
+#echo "What K mech do you want to use? "
+#read k
+#sedCommand=$line"s/$prev/$k/g"
+#$(sed -i $sedCommand config.in)
