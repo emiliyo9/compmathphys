@@ -13,4 +13,4 @@ cd $PBS_O_WORKDIR
 #load QE
 module load QuantumESPRESSO/5.2.1-intel-2015b
 #run QE command
-mpirun -np $PBS_NP ./auto_K_mesh.sh > kmesh_out.txt
+mpirun -np $PBS_NP ./auto_K_mesh.sh
