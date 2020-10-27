@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for (( i = 2; i < 11; i++ )); do
+for (( i = 2; i < 15; i++ )); do
     w=$(grep "ecutwfc" $i.in | grep -o '[0-9]*')
     r=$(grep "ecutrho" $i.in | grep -o '[0-9]*')
     f=$(echo $r"/"$w | bc)
