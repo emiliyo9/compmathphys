@@ -1,0 +1,2 @@
+/var/spool/slurm/slurmd/job10050606/slurm_script: line 14: syntax error near unexpected token `&'
+/var/spool/slurm/slurmd/job10050606/slurm_script: line 14: `&CONTROL'
