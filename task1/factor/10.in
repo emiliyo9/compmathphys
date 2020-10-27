@@ -22,7 +22,7 @@
   nat = 5
   ntyp = 2
   ecutwfc = 170
-  ecutrho = 1020
+  ecutrho = 1700
   input_dft = 'pbe'
   occupations = 'smearing'
   smearing = 'mv'
