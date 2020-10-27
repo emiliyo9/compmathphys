@@ -2,7 +2,7 @@
 
 w=$(grep 'twfc' config.in | grep -o '[0-9]*')
 r=$(grep 'trho' config.in | grep -o '[0-9]*')
-for (( i = 2; i < 11; ++i )); do
+for (( i = 2; i < 21; ++i )); do
     # setup input file for pw.x
     
     $(cp config.in $i.in)
