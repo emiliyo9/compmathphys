@@ -1,0 +1,58 @@
+&CONTROL
+  calculation = 'vc-relax'
+  etot_conv_thr =   1.0000000000d-04
+  forc_conv_thr =   1.0000000000d-04
+  outdir = './out/'
+  prefix = 'output'
+  pseudo_dir = './pseudo/'
+  tprnfor = .true.
+  tstress = .true.
+  verbosity = 'high'
+/
+&SYSTEM
+  degauss =   1.4699723600d-02
+  ecutrho =   735
+  ecutwfc =   105
+  ibrav = 0
+  nat = 10
+  nspin = 2
+  ntyp = 2
+  occupations = 'smearing'
+  smearing = 'cold'
+  starting_magnetization(1) =   3.1250000000d-01
+  starting_magnetization(2) =   1.0000000000d-01
+/
+&ELECTRONS
+  conv_thr =   2.0000000000d-09
+  electron_maxstep = 80
+  mixing_beta =   4.0000000000d-01
+/
+
+%IONS
+	ion_dynamics='bfgs'
+/
+&CELL
+	cell_dynamics='bfgs'
+	press=0.d0
+	press_conv_thr=0.5d0
+/
+ATOMIC_SPECIES
+Fe     55.847 Fe.pbe-spn-kjpaw_psl.0.2.1.UPF
+N      14.0067 N.pbe-n-radius_5.UPF
+ATOMIC_POSITIONS crystal
+Fe           0.0000000000       0.0000000000       0.0000000000 
+Fe          -0.0000000000      -0.0000000000       0.5000000000 
+Fe           0.5000000000       0.5000000000       0.0000000000 
+Fe           0.5000000000       0.5000000000       0.5000000000 
+Fe          -0.0000000000       0.5000000000       0.3700000000 
+Fe          -0.0000000000       0.5000000000       0.6300000000 
+Fe           0.5000000000      -0.0000000000       0.6300000000 
+Fe           0.5000000000      -0.0000000000       0.3700000000 
+N            0.5000000000       0.5000000000       0.3700000000 
+N            0.5000000000       0.5000000000       0.6300000000 
+K_POINTS automatic
+9 9 4 0 0 0
+CELL_PARAMETERS angstrom
+      3.6700000000       0.0000000000       0.0000000000
+      0.0000000000       3.6700000000       0.0000000000
+      0.0000000000       0.0000000000       8.2000000000
