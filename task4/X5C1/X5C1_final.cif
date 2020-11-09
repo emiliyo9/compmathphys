@@ -1,0 +1,37 @@
+_cell_length_a    3.67367
+_cell_length_b    7.34735
+_cell_length_c    3.67367
+_cell_angle_alpha 90.00000
+_cell_angle_beta  90.00000
+_cell_angle_gamma 90.00000
+_cell_volume      99.15885
+
+_symmetry_space_group_name_H-M "P 1 21/m 1"
+_symmetry_Int_Tables_number 11
+_space_group.reference_setting '011:-P 2yb'
+_space_group.transform_Pp_abc a,b,c;0,0,0
+
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 x,y,z
+2 -x,y+1/2,-z
+3 -x,-y,-z
+4 x,-y+1/2,z
+
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_fract_symmform
+Fe0_1 Fe   2 e 0.10000 0.25000 0.40000 1.00000 Dx,0,Dz 
+Fe0_2 Fe   2 e 0.60000 0.25000 -0.90000 1.00000 Dx,0,Dz 
+Fe0_3 Fe   2 d 0.50000 0.00000 0.50000 1.00000 0,0,0   
+Fe1_1 Fe   2 a 0.00000 0.00000 0.00000 1.00000 0,0,0   
+N2_1  N    2 e 0.60000 0.25000 0.40000 1.00000 Dx,0,Dz 
+
