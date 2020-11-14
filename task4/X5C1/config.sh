@@ -5,7 +5,7 @@
 #PBS -o out_x5c1.file
 #PBS -e error_x5c1.file
 #PBS -l walltime=24:00:00
-#PBS -l nodes=1:ppn=12
+#PBS -l nodes=1:ppn=24
 #PBS -m be -M emile.segers8@gmail.com
 #
 # change to directory you were working when submitting job
