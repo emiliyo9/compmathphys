@@ -23,8 +23,8 @@
   A =    3.81353
   nat = 10
   ntyp = 2
-  ecutwfc = 105
-  ecutrho = 735
+  ecutwfc = 140
+  ecutrho = 980
   input_dft = 'pbe'
   occupations = 'smearing'
   smearing = 'mv'
