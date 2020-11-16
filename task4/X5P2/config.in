@@ -31,6 +31,12 @@
   degauss = 1.4699723600d-02
   starting_magnetization(1) =   3.1250000000d-01
   starting_magnetization(2) =   1.0000000000d-01 
+  starting_magnetization(3) =   1.0000000000d-01 
+  starting_magnetization(4) =   1.0000000000d-01 
+  starting_magnetization(5) =   1.0000000000d-01 
+  starting_magnetization(6) =   1.0000000000d-01 
+  starting_magnetization(7) =   1.0000000000d-01 
+  starting_magnetization(8) =   1.0000000000d-01 
 /
 &ELECTRONS
   conv_thr =   2.0000000000d-09
