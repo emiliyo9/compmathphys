@@ -4,7 +4,7 @@
 #PBS -N phonon_calc
 #PBS -o out.file
 #PBS -e err.file
-#PBS -l walltime=12:00:00
+#PBS -l walltime=36:00:00
 #PBS -l nodes=1:ppn=24
 #PBS -m be -M emile.segers8@gmail.com
 #
@@ -13,5 +13,4 @@ cd $PBS_O_WORKDIR
 #load QE
 module load QuantumESPRESSO/5.2.1-intel-2015b
 #run QE command
-mpirun -np $PBS_NP pw.x -input X5P2/config.in > X5P2/config.out
-mpirun -np $PBS_NP pw.x -input X5C1/config.in > X5C1/config.out
+mpirun -np $PBS_NP pw.x -input X5C1/config.in > X5C1/correct_mag.out
