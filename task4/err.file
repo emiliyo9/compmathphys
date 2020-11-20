@@ -1,0 +1,43 @@
+slurmstepd: error: *** STEP 20210709.0 ON node2314.phanpy.os CANCELLED AT 2020-11-20T17:49:28 ***
+slurmstepd: error: *** JOB 20210709 ON node2314.phanpy.os CANCELLED AT 2020-11-20T17:49:28 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               000000000385B201  Unknown               Unknown  Unknown
+pw.x               0000000003859957  Unknown               Unknown  Unknown
+pw.x               0000000003804B84  Unknown               Unknown  Unknown
+pw.x               0000000003804996  Unknown               Unknown  Unknown
+pw.x               00000000037975DF  Unknown               Unknown  Unknown
+pw.x               000000000379DA3B  Unknown               Unknown  Unknown
+libpthread.so.0    00002ADA5746A630  Unknown               Unknown  Unknown
+pw.x               00000000030DAC81  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               000000000385B201  Unknown               Unknown  Unknown
+pw.x               0000000003859957  Unknown               Unknown  Unknown
+pw.x               0000000003804B84  Unknown               Unknown  Unknown
+pw.x               0000000003804996  Unknown               Unknown  Unknown
+pw.x               00000000037975DF  Unknown               Unknown  Unknown
+pw.x               000000000379DA3B  Unknown               Unknown  Unknown
+libpthread.so.0    00002B0859387630  Unknown               Unknown  Unknown
+pw.x               00000000030DAD4A  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               000000000385B201  Unknown               Unknown  Unknown
+pw.x               0000000003859957  Unknown               Unknown  Unknown
+pw.x               0000000003804B84  Unknown               Unknown  Unknown
+pw.x               0000000003804996  Unknown               Unknown  Unknown
+pw.x               00000000037975DF  Unknown               Unknown  Unknown
+pw.x               000000000379DA3B  Unknown               Unknown  Unknown
+libpthread.so.0    00002B386BE71630  Unknown               Unknown  Unknown
+pw.x               00000000030DAC98  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               000000000385B201  Unknown               Unknown  Unknown
+pw.x               0000000003859957  Unknown               Unknown  Unknown
+pw.x               0000000003804B84  Unknown               Unknown  Unknown
+pw.x               0000000003804996  Unknown               Unknown  Unknown
+pw.x               00000000037975DF  Unknown               Unknown  Unknown
+pw.x               000000000379DA3B  Unknown               Unknown  Unknown
+libpthread.so.0    00002B256D039630  Unknown               Unknown  Unknown
+pw.x               00000000030DAD4A  Unknown               Unknown  Unknown

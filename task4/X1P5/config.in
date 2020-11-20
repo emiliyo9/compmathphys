@@ -33,7 +33,7 @@
 /
 &CELL
  cell_dynamics='bfgs'
- press=300.d0
+ press=0.d0
  press_conv_thr=0.5d0
 /
 
