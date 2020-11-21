@@ -4,7 +4,7 @@
 #PBS -N phonon_calc
 #PBS -o out.file
 #PBS -e err.file
-#PBS -l walltime=24:00:00
+#PBS -l walltime=48:00:00
 #PBS -l nodes=1:ppn=24
 #PBS -m be -M emile.segers8@gmail.com
 #
