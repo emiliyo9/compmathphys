@@ -1,7 +1,7 @@
 &CONTROL
   calculation = 'vc-relax'
-  etot_conv_thr =   2.0000000000d-04
-  forc_conv_thr =   1.0000000000d-04
+  etot_conv_thr =   1.0000000000d-01
+  forc_conv_thr =   1.0000000000d-01
   outdir = './out/'
   prefix = 'aiida'
   pseudo_dir = './pseudo/'
@@ -23,8 +23,8 @@
   starting_magnetization(2) =   1.0000000000d-01
 /
 &ELECTRONS
-  conv_thr =   4.0000000000d-09
-  electron_maxstep = 80
+  conv_thr =   4.0000000000d-07
+  electron_maxstep = 200
   mixing_beta =   4.0000000000d-01
 /
 
