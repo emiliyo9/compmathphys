@@ -1,7 +1,7 @@
 &CONTROL
   calculation = 'vc-relax'
-  etot_conv_thr =   1.0000000000d-01
-  forc_conv_thr =   1.0000000000d-01
+  etot_conv_thr =   1.0000000000d-03
+  forc_conv_thr =   1.0000000000d-03
   outdir = './out/'
   prefix = 'aiida'
   pseudo_dir = './pseudo/'
