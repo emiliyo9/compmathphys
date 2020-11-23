@@ -13,4 +13,7 @@ cd $PBS_O_WORKDIR
 #load QE
 module load QuantumESPRESSO/5.2.1-intel-2015b
 #run QE command
-mpirun -np $PBS_NP pw.x -input rerun/config.in > rerun/config.out
+mpirun -np $PBS_NP pw.x -input X5P2/300.in > X5P2/300.out
+mpirun -np $PBS_NP pw.x -input X5P2/0.in > X5P2/0.out
+mpirun -np $PBS_NP pw.x -input X5C1/300.in > X5C1/300.out
+mpirun -np $PBS_NP pw.x -input X5C1/0.in > X5C1/0.out
