@@ -11,7 +11,7 @@
   calculation = 'vc-relax'
   etot_conv_thr =   1.0000000000d-04
   forc_conv_thr =   1.0000000000d-04
-  outdir = 'output'
+  outdir = 'outputx5c1300'
   prefix = 'fe4n'
   pseudo_dir = 'pseudo'
   verbosity = 'high'
@@ -43,7 +43,7 @@
 &CELL
   cell_dynamics='bfgs',
   press=300.d0,
-  press_conv_thr=0.0005d0,
+  press_conv_thr=0.5d0,
 /
 CELL_PARAMETERS {alat}
   1.000000000000000   0.000000000000000   0.000000000000000 

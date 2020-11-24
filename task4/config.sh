@@ -11,7 +11,7 @@
 # change to directory you were working when submitting job
 cd $PBS_O_WORKDIR
 #load QE
-module load QuantumESPRESSO/5.2.1-intel-2015b
+module load QuantumESPRESSO/6.5-intel-2019b
 #run QE command
 mpirun -np $PBS_NP pw.x -input X5P2/300.in > X5P2/300.out
 mpirun -np $PBS_NP pw.x -input X5P2/0.in > X5P2/0.out
