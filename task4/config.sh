@@ -13,4 +13,4 @@ cd $PBS_O_WORKDIR
 #load QE
 module load QuantumESPRESSO/6.5-intel-2019b
 #run QE command
-mpirun -np $PBS_NP pw.x -input X1P5/x1p5_2gpa.in > X1P5/x1p5_2gpa.out
+mpirun -np $PBS_NP pw.x -input X1P5/x1p5_30gpa.in > X1P5/x1p5_30gpa.out
