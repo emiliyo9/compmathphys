@@ -1,0 +1,49 @@
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+pw.x               0000000004F4E253  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AAE99389630  Unknown               Unknown  Unknown
+pw.x               0000000004CA3C3B  Unknown               Unknown  Unknown
+pw.x               0000000004D1475E  Unknown               Unknown  Unknown
+pw.x               0000000004DE06B0  Unknown               Unknown  Unknown
+pw.x               0000000004D14659  Unknown               Unknown  Unknown
+pw.x               0000000004C95B3E  Unknown               Unknown  Unknown
+pw.x               0000000004BF4D1A  Unknown               Unknown  Unknown
+pw.x               0000000004BF46B6  Unknown               Unknown  Unknown
+libmpi.so.12.0     00002AAE9A4F57D9  Unknown               Unknown  Unknown
+libmpi.so.12.0     00002AAE9A4F52E3  Unknown               Unknown  Unknown
+libmpi.so.12       00002AAE9A65218A  PMPI_Finalize         Unknown  Unknown
+libmpifort.so.12.  00002AAE9A0D54DA  pmpi_finalize__       Unknown  Unknown
+pw.x               000000000086933B  Unknown               Unknown  Unknown
+pw.x               00000000005BA3E7  Unknown               Unknown  Unknown
+pw.x               0000000000414B33  Unknown               Unknown  Unknown
+pw.x               0000000000414912  Unknown               Unknown  Unknown
+libc-2.17.so       00002AAE9B2A1555  __libc_start_main     Unknown  Unknown
+pw.x               0000000000414829  Unknown               Unknown  Unknown
+[mpiexec@node2302.phanpy.os] HYDU_sock_write (../../utils/sock/sock.c:418): write error (Disk quota exceeded)
+[mpiexec@node2302.phanpy.os] stdoe_cb (../../ui/utils/uiu.c:475): unable to write data to stdout/stderr
+[mpiexec@node2302.phanpy.os] control_cb (../../pm/pmiserv/pmiserv_cb.c:1055): error in the UI defined callback
+[mpiexec@node2302.phanpy.os] HYDT_dmxu_poll_wait_for_event (../../tools/demux/demux_poll.c:76): callback returned error status
+[mpiexec@node2302.phanpy.os] HYD_pmci_wait_for_completion (../../pm/pmiserv/pmiserv_pmci.c:520): error waiting for event
+[mpiexec@node2302.phanpy.os] main (../../ui/mpich/mpiexec.c:1157): process manager error waiting for completion
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+pw.x               0000000004F4E253  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AD1253DE630  Unknown               Unknown  Unknown
+pw.x               0000000004CA3C3B  Unknown               Unknown  Unknown
+pw.x               0000000004D1475E  Unknown               Unknown  Unknown
+pw.x               0000000004DE06B0  Unknown               Unknown  Unknown
+pw.x               0000000004D14659  Unknown               Unknown  Unknown
+pw.x               0000000004C95B3E  Unknown               Unknown  Unknown
+pw.x               0000000004BF4D1A  Unknown               Unknown  Unknown
+pw.x               0000000004BF46B6  Unknown               Unknown  Unknown
+libmpi.so.12.0     00002AD12654A7D9  Unknown               Unknown  Unknown
+libmpi.so.12.0     00002AD12654A2E3  Unknown               Unknown  Unknown
+libmpi.so.12       00002AD1266A718A  PMPI_Finalize         Unknown  Unknown
+libmpifort.so.12.  00002AD12612A4DA  pmpi_finalize__       Unknown  Unknown
+pw.x               000000000086933B  Unknown               Unknown  Unknown
+pw.x               00000000005BA3E7  Unknown               Unknown  Unknown
+pw.x               0000000000414B33  Unknown               Unknown  Unknown
+pw.x               0000000000414912  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD1272F6555  __libc_start_main     Unknown  Unknown
+pw.x               0000000000414829  Unknown               Unknown  Unknown
+[mpiexec@node2316.phanpy.os] HYDU_sock_write (../../utils/sock/sock.c:418): error waiting for event

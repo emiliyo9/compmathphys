@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 #
-#PBS -N phonon_calc
+#PBS -N phonon_calc_2gpa
 #PBS -o out.file
 #PBS -e err.file
 #PBS -l walltime=48:00:00
@@ -13,7 +13,4 @@ cd $PBS_O_WORKDIR
 #load QE
 module load QuantumESPRESSO/6.5-intel-2019b
 #run QE command
-mpirun -np $PBS_NP pw.x -input X5P2/300.in > X5P2/300.out
-mpirun -np $PBS_NP pw.x -input X5P2/0.in > X5P2/0.out
-mpirun -np $PBS_NP pw.x -input X5C1/300.in > X5C1/300.out
-mpirun -np $PBS_NP pw.x -input X5C1/0.in > X5C1/0.out
+mpirun -np $PBS_NP pw.x -input X1P5/x1p5_2gpa.in > X1P5/x1p5_2gpa.out
